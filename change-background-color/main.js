@@ -13,13 +13,14 @@ function changeBackgroundColor () {
     let newColorIndex = getNewColorIndex ();
     mainDivClassList.remove (colors [currentColorIndex]);
     mainDivClassList.add (colors [newColorIndex]);
+    console.log (colors [newColorIndex]);
     currentColorIndex = newColorIndex;    
 }
 
 function getNewColorIndex () {
     let colorIndex = currentColorIndex;
     while (colorIndex == currentColorIndex) {
-        colorIndex = Math.floor (Math.random () * (colors.length - 1));
+        colorIndex = Math.floor (Math.random () * colors.length);
     }
     return colorIndex;
 }
