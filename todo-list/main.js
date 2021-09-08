@@ -18,6 +18,12 @@ function addTodo () {
     let todoCard = addNewElement ("div","card mb-2 shadow-sm",todos);
     let todoBody = addNewElement ("div","card-body",todoCard);
     let cardTitle = addNewElement ("h4","card-title",todoBody,newTodoInput.value);
+    let completeButton = addNewElement ("button", "btn btn-success", todoBody, "Complete");
+    completeButton.addEventListener ("click", ()=> {
+        cardTitle.style.color = "grey";
+        cardTitle.innerText += " (Completed)";
+        newTodoInput.focus ();
+    })
     let deleteButton = addNewElement ("button","btn btn-danger",todoBody, "Delete");
     deleteButton.addEventListener ("click", ()=> {
         todos.removeChild (todoCard);
