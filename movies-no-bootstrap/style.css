@@ -1,0 +1,22 @@
+body {
+    background-color: #22254b;
+    font-family: sans-serif;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie-card {
+    width: 300px;
+    background-color:rgb(41,41,70);
+    box-shadow: 5px;
+    margin: 10px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.movie-title {
+    color: #EBE5E2;
+    padding-left: 10px;
+}
