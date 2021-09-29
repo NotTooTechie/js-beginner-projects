@@ -1,0 +1,55 @@
+html,
+body {
+  height: 100%;
+  margin: 0px;
+}
+
+body {
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.component {
+    color: white;
+    width: 800px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nextYearDiv {
+    grid-column: 1 / 5;
+    align-self: center;
+    font-size: 100px;
+    text-align: center;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #34495eb2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.card {
+    align-self: center;
+}
+
+.number {
+    border-radius: 5px 5px 0px 0px;
+    background-color: #34495eda;
+    font-size: 100px;
+    text-align: center;
+}
+
+.text {
+    border-radius: 0px 0px 5px 5px;
+    background-color: #2c3e50d4;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
