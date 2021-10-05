@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+    <script src="aws-cognito-sdk.js"></script>
+    <script src="amazon-cognito-identity.min.js"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.16.0.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <div id="selfieCard" class="card">
+            <h1>Selfie</h1>
+            <video id="video" autoplay>Waiting for video</video>
+            <canvas id="selfieCanvas" hidden></canvas>
+            <button id="takeSelfieButton" disabled="true">Take Selfie</button>
+        </div>
+            
+        <div id="govtIdCard" class="card">
+            <h1>Government ID</h1>
+            <input type="file" name="fileToUpload" id="fileToUpload" accept="image/*">
+            <img id="govIdImg">
+            <button id="compareButton" disabled = "true">Submit</button>
+        </div>
+        
+        <div id="resultCard" class="card">
+            <h1>Result</h1>
+            <div id="result">
+                <h1 id = "resultMessage"></h1>
+            </div>
+            <button id="restartButton">Restart</button>
+        </div>
+    </div>
+</body>
+</html>
